@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.madeinnepalandro.QuizPlay"
+          android:versionCode="1"
+          android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="16"/>
+    <application android:label="@string/app_name" android:icon="@drawable/ic_launcher">
+        <activity android:name="MyActivity"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".QuestionView">
+
+        </activity>
+
+        <activity android:name=".AddQuestion">
+
+        </activity>
+        <activity android:name=".Score">
+            <intent-filter>
+                <action android:name=".Question_View"/>
+            </intent-filter>
+
+        </activity>
+
+        <activity android:name=".AboutUs">
+
+        </activity>
+
+        <Fragment
+                android:name="HomeFragment"
+                android:label="@string/app_name">
+
+        </Fragment>
+        <Fragment
+                android:name=".AboutUsFragment"
+                android:label="@string/app_name">
+
+        </Fragment>
+    </application>
+</manifest>

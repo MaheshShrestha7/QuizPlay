@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools" android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" android:weightSum="1" tools:context=".AddQuestion">
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Category"
+            android:id="@+id/textView3" android:layout_weight="0.03"/>
+    <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/category_items"
+            android:id="@+id/listCategory"/>
+
+
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Questions"
+            android:id="@+id/textView4" android:layout_weight="0.03"/>
+    <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:id="@+id/txtQuestion"/>
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Option A"
+            android:id="@+id/textView5" android:layout_weight="0.03"/>
+    <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+              android:id="@+id/txtOptionA"/>
+
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Option B"
+            android:id="@+id/textView6" android:layout_weight="0.03"/>
+    <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+              android:id="@+id/txtOptionB"/>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Option C"
+            android:id="@+id/textView7" android:layout_weight="0.03"/>
+    <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+              android:id="@+id/txtOptionC"/>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Option D"
+            android:id="@+id/textView8" android:layout_weight="0.03"/>
+    <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+              android:id="@+id/txtOptionD"/>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Right Option"
+            android:id="@+id/textView9" android:layout_weight="0.03"/>
+    <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+              android:id="@+id/txtRightOption"/>
+    <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:id="@+id/btnAdd"
+            android:text="Add Question"/>
+
+</LinearLayout>

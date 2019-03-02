@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" android:weightSum="1">
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="GAME OVER"
+            android:id="@+id/txtReason" android:layout_gravity="center_horizontal" android:layout_weight="0.06"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="#fff30d12"
+            android:textSize="50dp"
+            android:textStyle="bold"/>
+    <TextView
+            android:layout_width="205dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Your Final Score is :"
+            android:id="@+id/textView11" android:layout_weight="0.06"/>
+    <TextView
+            android:layout_width="322dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/txtScore" android:layout_gravity="right"
+            android:gravity="center_vertical|center_horizontal" android:layout_weight="0.33"
+            android:textStyle="bold"
+            android:text="100"
+            android:textSize="50dp"
+            android:textColor="#ff5bff28"
+            android:inputType="number"/>
+    <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Play Again"
+            android:id="@+id/btnPlayAgain"
+            android:background="#ffc94ef3"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.06"/>
+        <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Exit"
+                android:id="@+id/btnExit" android:layout_weight="0.10"/>
+</LinearLayout>

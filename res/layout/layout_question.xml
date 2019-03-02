@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Q.No : "
+            android:id="@+id/txtQuestionNumber" android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:textColor="#ffff3a42"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Question"
+            android:id="@+id/btnQuestion" android:layout_below="@+id/txtQuestionNumber"
+            android:layout_alignParentLeft="true" android:layout_alignParentRight="true"
+            android:textColor="#261aff"
+            android:background="@drawable/bg_question"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textIsSelectable="false"
+            />
+    <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/timeProgress"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/btnQuestion" android:layout_alignParentRight="true"/>
+
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option A"
+            android:textStyle="bold"
+            android:id="@+id/btnOptionA" android:layout_below="@+id/timeProgress" android:layout_alignParentLeft="true"
+            android:layout_marginTop="54dp"
+            android:background="@drawable/bg_option1"
+            android:textAlignment="textStart" android:layout_marginLeft="2dp" android:layout_marginRight="2dp"
+            android:layout_marginBottom="12dp"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option B"
+            android:textStyle="bold"
+            android:textAlignment="textStart"
+            android:background="@drawable/bg_option"
+            android:id="@+id/btnOptionB" android:layout_alignTop="@+id/btnOptionA" android:layout_alignParentRight="true"
+            android:layout_marginLeft="2dp" android:layout_marginRight="2dp" android:layout_marginBottom="12dp"
+            />
+
+
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option C"
+            android:textStyle="bold"
+            android:background="@drawable/bg_option"
+            android:id="@+id/btnOptionC" android:layout_below="@+id/btnOptionA" android:layout_alignParentLeft="true"
+            android:layout_marginLeft="2dp" android:layout_marginRight="2dp"
+            android:focusable="false" android:gravity="center" android:hint="Option C"/>
+
+   <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Optin D"
+            android:background="@drawable/bg_option1"
+            android:id="@+id/btnOptionD"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true" android:layout_alignTop="@+id/btnOptionC"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp" android:layout_alignBottom="@+id/btnOptionC"/>
+
+</RelativeLayout>

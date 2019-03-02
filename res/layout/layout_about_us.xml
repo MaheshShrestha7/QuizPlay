@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" android:weightSum="1">
+
+    <TextView
+            android:layout_width="306dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="About Us"
+            android:id="@+id/textView" android:layout_weight="0.09" android:textStyle="bold"
+            android:gravity="center_vertical|center|center_horizontal"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="This Quiz android app has been done as a part of Final year project for the completion of BCA(Bacherlor of Computer Application by our Team"
+            android:id="@+id/textView2" android:layout_weight="0.09"/>
+    <TextView
+            android:layout_width="299dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Our Team"
+            android:gravity="center"
+            android:id="@+id/textView10" android:layout_gravity="center_horizontal" android:layout_weight="0.09"/>
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Mahesh Shrestha\nBikash Pathak\nAruna Acharya\nDikshya Poudel\nNeema Magar"
+            android:gravity="center"
+            android:textColor="#ff75ff2b"
+            android:id="@+id/textView12" android:layout_gravity="center_horizontal" android:layout_weight="0.09"/>
+</LinearLayout>
